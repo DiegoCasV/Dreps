@@ -1,0 +1,162 @@
+.navbar {
+    background-color: white;
+    box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+    width: 100%;
+}
+
+.logo img {
+    scale: 0.75;
+}
+
+.container {
+    display: flex;
+    margin-right: 64px;
+    align-items: center;
+    padding: 4px;
+}
+
+.nav-links a {
+    margin-left: 16px;
+}
+
+.nav-buttons {
+    margin-left: auto;
+    display: flex;
+}
+
+.nav-button {
+    margin-left: 8px;
+    cursor: pointer;
+    border: none;
+    background: white;
+}
+
+#search img {
+    scale: 0.65;
+}
+
+#profile img {
+    scale: 0.9;
+}
+
+.nav-mobile {
+    margin: 0;
+    background-color: rgb(241, 240, 240);
+    padding-top: 24px;
+}
+
+.nav-mobile a {
+    flex-direction: column;
+    display: block;
+    font-size: large;
+    padding: 12px 0;
+    margin-left: 12px;
+}
+
+a {
+    text-decoration: none;
+    color: #2e2e2e;
+    text-align: left;
+}
+
+@media (min-width: 701px) {    
+    .button-menu-mobile {
+        display: none;
+    }
+}
+
+@media (max-width: 700px) {
+    .container {
+        margin-right: 12px;
+    }
+
+    .logo {
+        display: inline-flex;
+        margin: auto;
+    }
+
+    .nav-links {
+        display: none;
+    }
+}
+
+/* 
+.nav-mobile {
+        display: none;
+    }
+
+
+
+.navbar {
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    z-index: 50;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #555;
+    font-size: 1rem;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    color: #000;
+}
+
+
+.menu-button {
+    display: none;
+    cursor: pointer;
+}
+
+
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    background-color: white;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.mobile-menu a {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #555;
+    display: block;
+}
+
+.mobile-menu a:hover {
+    background-color: #f5f5f5;
+}
+*/
