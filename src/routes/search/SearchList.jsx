@@ -34,10 +34,10 @@ export default function SearchList({ isMobile }) {
                 activeContract={true}
             />
             <div className="searchproducts">
-                {productsFetch.isLoading &&
+                {productsFetch.isLoading
+                    ?
                     <Loading />
-                }
-                {!productsFetch.isLoading &&
+                    :
                     <ProductsSection
                         productsFetch={productsFetch}
                         title={categoria === "none" ? `${buscar}` : `${subcategoria}`}
