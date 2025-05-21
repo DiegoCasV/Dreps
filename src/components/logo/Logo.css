@@ -1,0 +1,15 @@
+.logo_dreps {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: black;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+@media (min-width: 770px) {
+    .logo_dreps {
+        font-size: 28px;
+    }
+}

@@ -1,0 +1,72 @@
+.login {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+}
+
+.login_container {
+    width: 90%;
+}
+
+.login_container h2 {
+    margin-bottom: 8px;
+}
+
+.login_labelinput {
+    display: block;
+    margin-top: 16px;
+}
+
+.login_input {
+    width: 100%;
+    border: 1px solid rgb(41, 41, 41);
+    border-radius: 4px;
+    padding: 12px 16px;
+    outline: none;
+}
+
+.login_passwordcontainer {
+    width: 100%;
+    position: relative;
+}
+
+.login_iconeye {
+    position: absolute;
+    top: 25%;
+    right: 2.5%;
+    cursor: pointer;
+}
+
+.login_button {
+    margin-top: 24px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    border-radius: 24px;
+    padding: 12px 16px;
+    cursor: pointer;
+}
+
+.login_crearcuenta {
+    text-align: center;
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+.login_registernav {
+    display: flex;
+    width: 100%;
+    gap: 12px;
+}
+
+.login_registernav svg {
+    margin-top: 6px;
+    cursor: pointer;
+}
+
+@media (min-width: 770px) {
+    .login_container {
+        width: 40%;
+    }
+}

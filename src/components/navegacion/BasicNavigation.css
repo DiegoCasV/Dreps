@@ -1,0 +1,21 @@
+.basicnavbar {
+    width: 100%;
+    background-color: white;
+}
+
+.basicnavbar_close {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+}
+
+.basicnavbar_close svg {
+    cursor: pointer;
+}
+
+@media (min-width: 770px) {
+    .basicnavbar {
+        padding-right: 15px;
+        padding-top: 1px;
+    }
+}

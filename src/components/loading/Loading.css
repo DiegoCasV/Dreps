@@ -1,0 +1,4 @@
+.loading_component {
+    margin: clamp(24px, 3.33vh, 42px) clamp(24px, 1.88vw, 42px);
+    font-size: clamp(16px, 1.25vw, 28px);
+}

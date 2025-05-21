@@ -1,0 +1,116 @@
+.navbar {
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    z-index: 100;
+    box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+}
+
+.navbar_container {
+    display: flex;
+    padding: 16px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    position: relative;
+    z-index: 101;
+
+    --gap-spacing: 8px;
+    --gap-spacing-items: 8px;
+}
+
+.navbar_leftbuttons {
+    display: flex;
+    align-items: center;
+    gap: var(--gap-spacing);
+}
+
+.navbar_leftbuttons p {
+    font-size: var(--font-size);
+}
+
+.navbar_logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.navbar_rightbuttons {
+    display: flex;
+    align-items: center;
+    gap: var(--gap-spacing);
+}
+
+.navbar_rightbuttons p {
+    font-size: var(--font-size);
+}
+
+.navbar_menubutton {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    cursor: pointer;
+    gap: var(--gap-spacing-items);
+}
+
+.navbar_mobilesearchicon-hide {
+    animation: revealCircle 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.navbar_mobilesearchicon-hide path {
+    fill: black;
+}
+
+.navbar_mobilesearchcontainer {
+    width: 100%;
+    background-color: white;
+    padding: 0px 16px 12px;
+    transition: all 0.3s ease-out;
+    position: absolute;
+    z-index: 99;
+    box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+}
+
+.navbar_desktopsearchcontainer {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    cursor: pointer;
+    gap: var(--gap-spacing-items);
+}
+
+.navbar_desktopsearchicon path {
+    fill: black;
+}
+
+.headerspace {
+    width: 100%;
+    background-color: transparent;
+}
+
+.navbar_login {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    cursor: pointer;
+    gap: var(--gap-spacing-items);
+}
+
+@keyframes revealCircle {
+    0% {
+        clip-path: circle(0% at 0% 100%);
+    }
+
+    100% {
+        clip-path: circle(150% at 0% 100%);
+    }
+}
+
+@media (min-width: 770px) {
+    .navbar_container {
+        padding: clamp(28px, 3.89vh, 48px) clamp(32px, 2.5vw, 64px);
+        --gap-spacing: clamp(32px, 2.5vw, 64px);
+        --gap-spacing-items: clamp(12px, 0.94vw, 24px);
+    }
+}

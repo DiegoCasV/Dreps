@@ -1,0 +1,22 @@
+.searchinput {
+    width: 100%;
+    position: relative;
+    border: 1px solid rgb(41, 41, 41);
+    border-radius: 24px;
+    padding: 12px 16px 12px 42px;
+    outline: none;
+}
+
+.searchinput::placeholder {
+    color: rgb(41, 41, 41);
+}
+
+.searchicon {
+    position: absolute;
+    top: 12px;
+    left: 32px
+}
+
+.searchicon path {
+    fill: rgb(41, 41, 41);
+}
